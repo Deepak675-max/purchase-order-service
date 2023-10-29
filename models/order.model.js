@@ -15,15 +15,19 @@ const orderSchema = new mongoose.Schema({
     },
     shippingSchedule1: {
         type: Date,
-        required: true
+        default: null
     },
     shippingSchedule2: {
         type: Date,
-        required: true
+        default: null
     },
     shippingSchedule3: {
         type: Date,
-        required: true
+        default: null
+    },
+    selectedShippingSchedule: {
+        type: Date,
+        default: null
     },
     userId: {
         type: mongoose.Types.ObjectId,

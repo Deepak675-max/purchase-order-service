@@ -1,8 +1,8 @@
 const express = require("express");
 const JWT = require("jsonwebtoken");
-const userManagementBackendApp = express();
+const purchaseOrderBackendApp = express();
 const httpErrors = require("http-errors");
-const httpServer = require("http").createServer(userManagementBackendApp);
+const httpServer = require("http").createServer(purchaseOrderBackendApp);
 const socketio = require("socket.io")(httpServer);
 
 socketio.on('connection', (socket) => {
@@ -16,7 +16,7 @@ socketio.on('connection', (socket) => {
 
 
 module.exports = {
-  userManagementBackendApp,
+  purchaseOrderBackendApp,
   httpServer,
   socketio,
 };
