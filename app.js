@@ -38,10 +38,10 @@ purchaseOrderBackendApp.use((error, req, res, next) => {
   next();
 });
 
-const port = process.env.APP_PORT || 3500
+const port = process.env.APP_PORT || 8000;
 
 httpServer.listen(port, () => {
-  console.log(`Application is running on: ${port}`);
+  console.log(`Purchase Order Service is running on: ${port}`);
 })
 
 

@@ -7,6 +7,7 @@ const createPurchaseOrderSchema = joi.object({
     shippingSchedule1: joi.date().allow(null).default(null),
     shippingSchedule2: joi.date().allow(null).default(null),
     shippingSchedule3: joi.date().allow(null).default(null),
+    selectedShippingSchedule: joi.date().allow(null).default(null),
     isReaded: joi.boolean().allow(null).default(false),
     userId: joi.string().trim().required(),
     vendorId: joi.string().trim().required(),
